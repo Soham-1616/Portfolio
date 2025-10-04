@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham Patil - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SOHAM PATIL</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Me</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Achievements & Certifications</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Me</a>
+                </li> -->
+            </ul>
+            <button class="contact-btn">Contact</button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Soham Patil</span>
+                </h1>
+                <div class="animated-text">
+                    <span class="static-text">I am a </span>
+                    <span class="typing-text" id="typing-text">CSE Student</span>
+                </div>
+                <p class="hero-description">
+                    A passionate Computer Science student with a strong foundation in programming, 
+                    problem-solving, and data analysis. Always eager to learn new technologies and 
+                    contribute to meaningful projects.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" id="resume-btn">
+                        <i class="fas fa-download"></i>
+                        Resume
+                    </button>
+                    <!-- <button class="btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Play Video
+                    </button> -->
+                </div>
+                <div class="social-icons">
+                    <a href="http://www.linkedin.com/in/soham-patil-29b6a5287" target="_blank" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Soham-1616" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:sohampatil200616@email.com" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-photo" id="profile-photo">
+                    <img src="profile.jpg" alt="Soham Patil" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Stats Section -->
+    <!-- <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="340">0</div>
+                    <div class="stat-label">Project Complete</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="120">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="9">0</div>
+                    <div class="stat-label">Award Winner</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">More About Me</h2>
+            
+            <!-- Education Section - Centered -->
+            <div class="education-section-centered">
+                <h3>My Education</h3>
+                <div class="timeline-centered">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2009 - 2021</div>
+                        <div class="timeline-content">
+                            <h4>Secondary School Education</h4>
+                            <p>Kirloskar High School, Kirloskarwadi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2021 - 2023</div>
+                        <div class="timeline-content">
+                            <h4>Higher Secondary Education</h4>
+                            <p>Laxamanrao Kirloskar Vidyamandir and Jr. College, Palus.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023 - 2027</div>
+                        <div class="timeline-content">
+                            <h4>Bachelor's Degree in Computer Science and Engineering</h4>
+                            <p>Annasaheb Dange College of Engineering and Technology, Ashta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills Section - Separate Rectangle -->
+            <div class="technical-skills-container">
+                <div class="technical-skills-rectangle">
+                    <h3>Technical Skills</h3>
+                    <p class="skills-subtitle">A colorful snapshot of my stack and strengths</p>
+                    <div class="skills-grid">
+                        <div class="skill-card programming">
+                            <div class="skill-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h4>Programming</h4>
+                            <div class="skill-tags">
+                                
+                                <!-- <span class="skill-tag">C++</span> -->
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">C</span>
+                            </div>
+                        </div>
+                        <div class="skill-card problem-solving">
+                            <div class="skill-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4>Problem Solving</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">DSA with Java</span>
+                                <span class="skill-tag">Algorithms (Sorting, Searching, Greedy, Dynamic Programming, etc.)</span>
+                                <!-- <span class="skill-tag">Platforms (LeetCode, Hackerrank, etc.)</span> -->
+                            </div>
+                        </div>
+                        <div class="skill-card databases">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Databases</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SQL & Oracle</span>
+                                <span class="skill-tag">Database Design</span>
+                            </div>
+
+                        </div>
+                        <!-- <div class="skill-card ai-ml">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>AI / ML</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Data Science</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Deep Learning</span>
+                                <span class="skill-tag">NLP</span>
+                            </div>
+                        </div> -->
+                        <div class="skill-card tools">
+                            <div class="skill-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h4>Tools / Platforms</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">GitHub</span>
+                                <span class="skill-tag">VS Code</span>
+                                <!-- <span class="skill-tag">IntelliJ IDEA</span> -->
+                                <span class="skill-tag">Juypter Notebook</span>
+                                <span class="skill-tag">Oracle</span>
+                                <span class="skill-tag">MySQL Workbench</span>
+                                <!-- <span class="skill-tag">Oracle SQL Developer</span> -->
+                            </div>
+                        </div>
+                        <div class="skill-card other">
+                            <div class="skill-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h4>Other</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Open Source Contributer (GSSoC'25)</span>
+                                <span class="skill-tag">Teamwork & Collaboration</span>
+                                <span class="skill-tag">Problem Analysis & Debugging</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Achievements Section -->
+     <section id="services" class="services">
+         <div class="container">
+             <h2 class="section-title">Achievements & Certifications</h2>
+             <div class="services-grid">
+                 <div class="service-card">
+                     <div class="service-icon">
+                         <i class="fab fa-github"></i>
+                     </div>
+                     <h3>Open Source Contributor</h3>
+                     <p>Selected as an Open Source Contributor at GSSoC, contributing to projects and collaborating with global developers.</p>
+                 </div>
+                 <div class="service-card">
+                     <div class="service-icon">
+                         <i class="fas fa-graduation-cap"></i>
+                     </div>
+                     <h3>Academics</h3>
+                     <p>Strong academic performance with a CPI of 8.00, showing consistent learning and dedication.</p>
+                 </div>
+                 <div class="service-card">
+                     <div class="service-icon">
+                         <i class="fas fa-certificate"></i>
+                     </div>
+                     <h3>Certifications</h3>
+                     <p>IBM Data Analyst (Coursera)</p>
+                     <p>Oracle Cloud Infrastructure Data Science Professional</p>
+                 </div>
+                 <div class="service-card">
+                     <div class="service-icon">
+                         <i class="fas fa-users"></i>
+                     </div>
+                     <h3>Students Association</h3>
+                     <p>Active member of CESA, serving as Placement & Cell Coordinator and contributing to student events</p>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+    <!-- Latest Projects Section -->
+    <section id="portfolio" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Latest Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <!-- <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="app">App Design</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="backend">Backend</button> -->
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Website</h3>
+                        <p>Modern e-commerce platform with React and Node.js</p>
+                    </div>
+                </div>
+                <!-- <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile Banking App</h3>
+                        <p>Secure mobile banking application with biometric authentication</p>
+                    </div>
+                </div> -->
+                <div class="project-card" data-category="branding">
+                    <!-- <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Brand Identity Design</h3>
+                        <p>Complete brand identity for a tech startup</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>API Development</h3>
+                        <p>RESTful API with microservices architecture</p>
+                    </div>
+                </div> -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive portfolio website with modern design</p>
+                    </div>
+                </div>
+                <!-- <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gaming App</h3>
+                        <p>Cross-platform gaming application</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <!-- <section id="blog" class="articles">
+        <div class="container">
+            <h2 class="section-title">Be Update With My Article</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>The Future of Web Development</h3>
+                        <p>Exploring the latest trends and technologies shaping the future of web development.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Dec 15, 2023</span>
+                            <span class="article-read-time">5 min read</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Best Practices for React Development</h3>
+                        <p>Essential tips and tricks for building scalable React applications.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Dec 10, 2023</span>
+                            <span class="article-read-time">8 min read</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>UI/UX Design Principles</h3>
+                        <p>Key principles for creating user-friendly and visually appealing interfaces.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Dec 5, 2023</span>
+                            <span class="article-read-time">6 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <!-- <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What My Clients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            "Wilker is an exceptional developer who delivered our project on time and exceeded our expectations. His attention to detail and technical expertise are outstanding."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            "Working with Wilker was a pleasure. He understood our vision and brought it to life with his creative solutions and professional approach."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Founder, StartupXYZ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            "The quality of work and communication throughout the project was excellent. I highly recommend Wilker for any development needs."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Davis</h4>
+                                <p>Marketing Director, BrandCo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Let's Connect Section -->
+    <section id="contact" class="lets-connect">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="connect-subtitle">Let’s build something amazing together. Drop me a message, I’d be happy to connect!</p>
+            
+            <div class="connect-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="send-btn">Send</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Social -->
+                <div class="contact-info-container">
+                    <!-- Get In Touch Card -->
+                    <div class="contact-info-card">
+                        <h3>
+                            <span class="card-icon">🤝</span>
+                            Get In Touch With Me
+                        </h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>sohampatil200616@email.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 9284582172</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Maharashtra, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Follow Me Card -->
+                    <div class="social-card">
+                        <h3>
+                            <span class="card-icon">🌐</span>
+                            Follow Me
+                        </h3>
+                        <div class="social-links">
+                            <a href="http://www.linkedin.com/in/soham-patil-29b6a5287" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://www.instagram.com/_.soham._.16?igsh=MTB2YXVxczVzcGQwMQ==" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://wa.me/+919284582172" target="_blank" class="social-link">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
